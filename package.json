@@ -11,6 +11,16 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "tailwindcss": "^4.0.1"
-  }
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M1nkyLab/My-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/M1nkyLab/My-website/issues"
+  },
+  "homepage": "https://github.com/M1nkyLab/My-website#readme"
 }
