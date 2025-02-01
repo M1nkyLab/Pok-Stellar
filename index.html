@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- put this class="scroll-smooth" for smooth scroll effect on entire page -->
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
  <!-- ✅ Add Tailwind -->
 </head>
+
 <body class="bg-[#fef6e4]">
 
-  <header>
-    <a href="#home" class="logo font-bold text-3xl p-5 ">Haziqq.</a>
+  <!-- to make the preloader page before enter the page -->
+
+  <div class="relative min-h-screen">
+    <header class="pt-10 flex items-center justify-between max-w-7xl mx-auto px-5">
+      <a href="#" class="logo font-bold text-3xl">Haziqq.</a>
+
+      <div class="relative inline-block w-11 h-5">
+        <input checked id="switch-component-1" type="checkbox" class="peer appearance-none w-11 h-5 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300" />
+        <label for="switch-component-1" class="absolute top-0 left-0 w-5 h-5 bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-6 peer-checked:border-slate-800 cursor-pointer">
+        </label>
+      </div>
+      </header>
 
   <!--use space-x-number for spacing each navbar or anything-->
   <!--flex space-x-6 items-center justify-center-->
-  <nav class="sticky top-0 mx-auto flex max-w-xl justify-around bg-[#f582ae] rounded-full border-2 border-[#a05672] h-12 px-4 py-2 shadow-md flex-wrap gap-2">
+  <!--added the glass effect to the navbar-->
+  <nav class="sticky top-5 z-50 mx-auto flex w-[800px] justify-around bg-[#f582ae]/30 rounded-full border-2 border-[#a05672]/50 h-12 px-4 py-2 shadow-md flex-wrap gap-2 backdrop-blur-xl mt-5">
+    <a href="#home" class="text-lg font-bold text-[#001858] hover:text-white">Home</a>
     <a href="#tools" class="text-lg font-bold text-[#001858] hover:text-white">Tools</a>
     <a href="#project" class="text-lg font-bold text-[#001858] hover:text-white">My Project</a>
     <a href="#experience" class="text-lg font-bold text-[#001858] hover:text-white">My Experience</a>
     <a href="#contact" class="text-lg font-bold text-[#001858] hover:text-white">Contact</a>
   </nav>
-  </header>
 
   <!-- Home/Intro section -->
   <section id="home" class="h-screen flex items-center justify-center">
@@ -41,6 +54,7 @@
   <!-- section for the my tools and h screen to fill the entire page  -->
     <section id="tools" class="h-screen text-center">
       <h2 class="py-20 text-4xl text-[#001858] font-bold">Tools</h2>
+
     </section>   
 
   <!-- section for the my project -->
@@ -54,34 +68,39 @@
   </section>   
 
   <!-- section for the contact me -->
-  <section id="contact" class="h-screen text-center">
-      <h2 class="py-20 text-4xl text-[#001858] font-bold">Contact Me</h2>
-      <div class="box-content m-auto h-96 w-[480px] p-10 border-2 border-black rounded-3xl bg-[#001858]">
-        <h1 class="text-4xl font-bold text-[#fffffe]">Get in Touch</h1>
-
-        <div class="flex flex-col space-y-4 w-full max-w-md mx-auto"> <!-- for the spacing for each form -->
-      
-        <!-- information for the form -->
-          <input 
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-[#001858] leading-tight focus:outline-none focus:shadow-outline 
-               hover:border-[#f582ae] hover:bg-[#fce4ec]" 
-        id="username" type="text" placeholder="Name">
-      
-      <input 
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-[#001858] leading-tight focus:outline-none focus:shadow-outline 
-               hover:border-[#a75977] " 
-        id="gmail" type="text" placeholder="Gmail">
-
+  <section id="contact" class="h-screen flex flex-col items-center justify-center text-center">
+    <h2 class="text-4xl text-[#001858] font-bold mb-10"></h2>
+  
+    <div class="box-content h-auto w-[500px] p-10 border border-[#f582ae] rounded-3xl bg-[#fef6e4] shadow-xl">
+      <h1 class="text-3xl font-bold text-[#001858] mb-6">Get in Touch</h1>
+  
+      <div class="flex flex-col space-y-4 w-full max-w-md mx-auto">
+        <!-- Name Input -->
         <input 
-        class="shadow appearance-none h-64 border rounded w-full py-2 px-3 text-[#001858] leading-tight focus:outline-none focus:shadow-outline 
-               hover:border-[#a75977] " 
-        id="message" type="text" placeholder="Messsage">
-      
+          class="border border-[#f582ae] rounded-lg w-full py-3 px-4 text-[#001858] focus:outline-none focus:ring-2 focus:ring-[#f582ae] transition-all duration-300 
+                 hover:border-[#f582ae] bg-white placeholder-[#001858]/60" 
+          id="username" type="text" placeholder="Your Name">
+  
+        <!-- Email Input -->
+        <input 
+          class="border border-[#f582ae] rounded-lg w-full py-3 px-4 text-[#001858] focus:outline-none focus:ring-2 focus:ring-[#f582ae] transition-all duration-300 
+                 hover:border-[#f582ae] bg-white placeholder-[#001858]/60" 
+          id="gmail" type="email" placeholder="Your Email">
+  
+        <!-- Message Box -->
+        <textarea 
+          class="border border-[#f582ae] rounded-lg w-full py-3 px-4 text-[#001858] focus:outline-none focus:ring-2 focus:ring-[#f582ae] transition-all duration-300 
+                  hover:border-[#f582ae] bg-white placeholder-[#001858]/60 h-40 resize-none" 
+          id="message" placeholder="Your Message"></textarea>
+  
+        <!-- Submit Button -->
+        <button 
+          class="mt-4 bg-[#f582ae] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#d46c92] transition-all duration-300 shadow-md">
+          Send Message
+        </button>
       </div>
     </div>
-      
-      
-  </section>   
+  </section>
 
   <!-- section for the footer or copyright -->
   <footer>
@@ -90,5 +109,6 @@
     </section>
   </footer>
 
+  </div>
 </body>
 </html>
