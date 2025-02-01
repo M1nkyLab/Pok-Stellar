@@ -10,30 +10,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
  <!-- ✅ Add Tailwind -->
 </head>
-<body class="bg-gradient-to-tr from-[#1a202c] via-[#2d3748] via-[#4a5568] to-[#718096]">
+<body class="bg-[#fef6e4]">
 
   <header>
     <a href="" class="logo font-bold text-3xl p-5 ">Haziqq.</a>
 
   <!--use space-x-number for spacing each navbar or anything-->
   <!--flex space-x-6 items-center justify-center-->
-  <nav class="relative mx-auto flex max-w-xl justify-center rounded-full border-2 border-black space-x-9 h-9">
-      <a href="#home" class="text-lg font-bold hover:text-purple-600"></a>
-      <a href="#tools" class="text-lg font-bold hover:text-red-600">Tools</a>
-      <a href="#project" class="text-lg font-bold hover:text-orange-600">My project</a>
-      <a href="#experience" class="text-lg font-bold hover:text-emerald-700">My experience</a>
-      <a href="#contact" class="text-lg font-bold hover:text-violet-950">Contact</a>
-
+  <nav class="sticky top-0 mx-auto flex max-w-xl justify-around bg-[#f582ae] rounded-full border-2 border-[#a05672] h-12 px-4 py-2 shadow-md flex-wrap gap-2">
+    <a href="#tools" class="text-lg font-bold text-[#001858] hover:text-white">Tools</a>
+    <a href="#project" class="text-lg font-bold text-[#001858] hover:text-white">My Project</a>
+    <a href="#experience" class="text-lg font-bold text-[#001858] hover:text-white">My Experience</a>
+    <a href="#contact" class="text-lg font-bold text-[#001858] hover:text-white">Contact</a>
   </nav>
   </header>
 
   <!-- Home/Intro section -->
   <section id="home" class="h-screen flex items-center justify-center">
     <div class="text-center text-balance">
-      <h1 class="font-[Harmattan] text-6xl hover:underline">
+      <h1 class="font-[Harmattan] text-6xl hover:underline text-[#001858]">
         I'M Haziqq.</h1>
         
-      <p class="font-[Heebo]">Hey there! Welcome to my Portfolio Website 👋
+      <p class="font-[Heebo] text-[#172c66]">Hey there! Welcome to my Portfolio Website 👋
       I'm a <span class="font-bold">Computer Science student</span> at <span class="font-bold text-blue-500 hover:underline">Universiti Poly-Tech Malaysia (UPTM)</span>. Just starting my journey into the world of coding and tech. Looking forward to sharing my projects and experiences here!
       Feel free to get in touch and connect with me!</p>
       </div>
@@ -42,28 +40,52 @@
   <!-- h-screen is h is height and screen for the full screen -->
   <!-- section for the my tools and h screen to fill the entire page  -->
     <section id="tools" class="h-screen text-center">
-      <h2 class="py-20 text-4xl">Tools</h2>
+      <h2 class="py-20 text-4xl text-[#001858] font-bold">Tools</h2>
     </section>   
 
   <!-- section for the my project -->
   <section id="project" class="h-screen text-center">
-    <h2 class="py-20 text-4xl">My projects</h2>
+    <h2 class="py-20 text-4xl text-[#001858] font-bold">My projects</h2>
   </section>   
 
   <!-- section for the my experience -->
   <section id="experience" class="h-screen text-center">
-    <h2 class="py-20 text-4xl">Experiences</h2>
+    <h2 class="py-20 text-4xl text-[#001858] font-bold">Experiences</h2>
   </section>   
 
   <!-- section for the contact me -->
   <section id="contact" class="h-screen text-center">
-      <h2 class="py-20 text-4xl">Contact Me</h2>
-      <div class="box-content m-auto h-96 w-[480px] p-10 border-2 border-black rounded-3xl bg-amber-600">asdwad</div>
+      <h2 class="py-20 text-4xl text-[#001858] font-bold">Contact Me</h2>
+      <div class="box-content m-auto h-96 w-[480px] p-10 border-2 border-black rounded-3xl bg-[#001858]">
+        <h1 class="text-4xl font-bold text-[#fffffe]">Get in Touch</h1>
+
+        <div class="flex flex-col space-y-4 w-full max-w-md mx-auto"> <!-- for the spacing for each form -->
+      
+        <!-- information for the form -->
+          <input 
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-[#001858] leading-tight focus:outline-none focus:shadow-outline 
+               hover:border-[#f582ae] hover:bg-[#fce4ec]" 
+        id="username" type="text" placeholder="Name">
+      
+      <input 
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-[#001858] leading-tight focus:outline-none focus:shadow-outline 
+               hover:border-[#a75977] " 
+        id="gmail" type="text" placeholder="Gmail">
+
+        <input 
+        class="shadow appearance-none h-64 border rounded w-full py-2 px-3 text-[#001858] leading-tight focus:outline-none focus:shadow-outline 
+               hover:border-[#a75977] " 
+        id="message" type="text" placeholder="Messsage">
+      
+      </div>
+    </div>
+      
+      
   </section>   
 
   <!-- section for the footer or copyright -->
   <footer>
-    <section id="copyright" class="text-center font-bold">
+    <section id="copyright" class="text-center bg-[#fef6e4] text-xs text-[#172c66]">
     © 2025 Haziqq
     </section>
   </footer>
