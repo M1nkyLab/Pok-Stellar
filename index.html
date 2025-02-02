@@ -12,31 +12,34 @@
  <!-- ✅ Add Tailwind -->
 </head>
 
-<body class="bg-[#fef6e4]">
+<body class="">
 
   <!-- to make the preloader page before enter the page -->
 
-  <div class="relative min-h-screen">
-    <header class="pt-10 flex items-center justify-between max-w-7xl mx-auto px-5">
-      <a href="#" class="logo font-bold text-3xl">Haziqq.</a>
+  <!-- Updated version of Nav Bar -->
+  <nav class="sticky top-3 z-50 mx-auto flex items-center justify-between w-[900px] bg-[#f582ae]/30 rounded-full border-2 border-[#a05672]/50 h-14 px-6 py-2 shadow-md backdrop-blur-xl">
+  
 
-      <div class="relative inline-block w-11 h-5">
-        <input checked id="switch-component-1" type="checkbox" class="peer appearance-none w-11 h-5 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300" />
-        <label for="switch-component-1" class="absolute top-0 left-0 w-5 h-5 bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-6 peer-checked:border-slate-800 cursor-pointer">
-        </label>
-      </div>
-      </header>
+    
+    <!-- Logo -->
+  <a href="#" class="text-3xl font-bold text-[#001858]">Haziqq.</a>
 
-  <!--use space-x-number for spacing each navbar or anything-->
-  <!--flex space-x-6 items-center justify-center-->
-  <!--added the glass effect to the navbar-->
-  <nav class="sticky top-5 z-50 mx-auto flex w-[800px] justify-around bg-[#f582ae]/30 rounded-full border-2 border-[#a05672]/50 h-12 px-4 py-2 shadow-md flex-wrap gap-2 backdrop-blur-xl mt-5">
-    <a href="#home" class="text-lg font-bold text-[#001858] hover:text-white">Home</a>
-    <a href="#tools" class="text-lg font-bold text-[#001858] hover:text-white">Tools</a>
-    <a href="#project" class="text-lg font-bold text-[#001858] hover:text-white">My Project</a>
-    <a href="#experience" class="text-lg font-bold text-[#001858] hover:text-white">My Experience</a>
-    <a href="#contact" class="text-lg font-bold text-[#001858] hover:text-white">Contact</a>
-  </nav>
+  <!-- Navbar Links -->
+  <div class="flex space-x-6">
+    <a href="#home" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">Home</a>
+    <a href="#tools" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">Tools</a>
+    <a href="#project" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">My Project</a>
+    <a href="#experience" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">My Experience</a>
+    <a href="#contact" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">Contact</a>
+  </div>
+
+  <!-- Toggle Switch -->
+  <div class="relative inline-block w-11 h-5">
+    <input checked id="switch-component-1" type="checkbox" class="peer appearance-none w-11 h-5 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300" />
+    <label for="switch-component-1" class="absolute top-0 left-0 w-5 h-5 bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-6 peer-checked:border-slate-800 cursor-pointer">
+    </label>
+  </div>
+</nav>
 
   <!-- Home/Intro section -->
   <section id="home" class="h-screen flex items-center justify-center">
@@ -109,6 +112,6 @@
     </section>
   </footer>
 
-  </div>
+
 </body>
 </html>
