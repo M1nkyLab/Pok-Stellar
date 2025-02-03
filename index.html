@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- put this class="scroll-smooth" for smooth scroll effect on entire page -->
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -9,96 +8,79 @@
   <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
- <!-- ✅ Add Tailwind -->
 </head>
 
-<body class="">
+<body class="bg-[#E0E1DD] text-[#0D1B2A]">
 
-  <!-- to make the preloader page before enter the page -->
+  <!-- Logo -->
+  <a href="#" class="text-3xl font-bold text-[#1B263B]">Haziqq.</a>
 
-  <!-- Updated version of Nav Bar -->
-  <nav class="sticky top-3 z-50 mx-auto flex items-center justify-between w-[900px] bg-[#f582ae]/30 rounded-full border-2 border-[#a05672]/50 h-14 px-6 py-2 shadow-md backdrop-blur-xl">
+  <!-- Nav Bar -->
+  <nav class="sticky top-3 z-50 mx-auto flex items-center justify-evenly w-[550px] bg-[#415A77] rounded-full border-2 border-[#778DA9]/50 h-14 px-6 py-2 shadow-md backdrop-blur-xl">
   
-
-    
-    <!-- Logo -->
-  <a href="#" class="text-3xl font-bold text-[#001858]">Haziqq.</a>
-
-  <!-- Navbar Links -->
-  <div class="flex space-x-6">
-    <a href="#home" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">Home</a>
-    <a href="#tools" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">Tools</a>
-    <a href="#project" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">My Project</a>
-    <a href="#experience" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">My Experience</a>
-    <a href="#contact" class="text-lg font-bold text-[#001858] hover:text-[#d46c92]">Contact</a>
-  </div>
-
-  <!-- Toggle Switch -->
-  <div class="relative inline-block w-11 h-5">
-    <input checked id="switch-component-1" type="checkbox" class="peer appearance-none w-11 h-5 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300" />
-    <label for="switch-component-1" class="absolute top-0 left-0 w-5 h-5 bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-6 peer-checked:border-slate-800 cursor-pointer">
-    </label>
-  </div>
-</nav>
+    <!-- Navbar Links -->
+    <div class="flex space-x-6">
+      <a href="#home" class="text-lg font-bold text-[#E0E1DD] hover:text-[#778DA9] duration-300">Home</a>
+      <a href="#tools" class="text-lg font-bold text-[#E0E1DD] hover:text-[#778DA9] duration-300">Tools</a>
+      <a href="#project" class="text-lg font-bold text-[#E0E1DD] hover:text-[#778DA9] duration-300">My Project</a>
+      <a href="#experience" class="text-lg font-bold text-[#E0E1DD] hover:text-[#778DA9] duration-300">My Experience</a>
+      <a href="#contact" class="text-lg font-bold text-[#E0E1DD] hover:text-[#778DA9] duration-300">Contact</a>
+    </div>
+  </nav>
 
   <!-- Home/Intro section -->
   <section id="home" class="h-screen flex items-center justify-center">
     <div class="text-center text-balance">
-      <h1 class="font-[Harmattan] text-6xl hover:underline text-[#001858]">
-        I'M Haziqq.</h1>
-        
-      <p class="font-[Heebo] text-[#172c66]">Welcome to my Portfolio Website 👋
-      I'm a <span class="font-bold">Computer Science student</span> at <span class="font-bold text-blue-500 hover:underline">Universiti Poly-Tech Malaysia (UPTM)</span>. Just starting my journey into the world of coding and tech. Looking forward to sharing my projects and experiences here!
-      Feel free to get in touch and connect with me!</p>
-      </div>
-    </section>   
+      <h1 class="font-[Harmattan] text-6xl hover:underline text-[#1B263B]">I'M Haziqq.</h1>
+      <p class="font-[Heebo] text-[#415A77]">
+        Welcome to my Portfolio Website 👋 I'm a <span class="font-bold">Computer Science student </span> at <span class="font-bold text-[#778DA9] hover:underline">Universiti Poly-Tech Malaysia (UPTM)</span>. Just starting my journey into the world of coding and tech. Looking forward to sharing my projects and experiences here! Feel free to get in touch and connect with me!
+      </p>
+    </div>
+  </section>   
 
+  <!-- Tools section -->
   <!-- h-screen is h is height and screen for the full screen -->
   <!-- section for the my tools and h screen to fill the entire page  -->
-    <section id="tools" class="h-screen text-center">
-      <h2 class="py-20 text-4xl text-[#001858] font-bold">Tools</h2>
+  <section id="tools" class="h-screen text-center">
+    <h2 class="py-20 text-4xl text-[#1B263B] font-bold">Tools</h2>
+  </section>   
 
-    </section>   
-
-  <!-- section for the my project -->
+  <!-- My Project section -->
   <section id="project" class="h-screen text-center">
-    <h2 class="py-20 text-4xl text-[#001858] font-bold">My projects</h2>
+    <h2 class="py-20 text-4xl text-[#1B263B] font-bold">My projects</h2>
   </section>   
 
-  <!-- section for the my experience -->
+  <!-- Experience section -->
   <section id="experience" class="h-screen text-center">
-    <h2 class="py-20 text-4xl text-[#001858] font-bold">Experiences</h2>
+    <h2 class="py-20 text-4xl text-[#1B263B] font-bold">Experiences</h2>
   </section>   
 
-  <!-- section for the contact me -->
+  <!-- Contact section -->
   <section id="contact" class="h-screen flex flex-col items-center justify-center text-center">
-    <h2 class="text-4xl text-[#001858] font-bold mb-10"></h2>
+    <h2 class="text-4xl text-[#1B263B] font-bold mb-10"></h2>
   
-    <div class="box-content h-auto w-[500px] p-10 border border-[#f582ae] rounded-3xl bg-[#fef6e4] shadow-xl">
-      <h1 class="text-3xl font-bold text-[#001858] mb-6">Get in Touch</h1>
+    <div class="box-content h-auto w-[500px] p-10 border border-[#778DA9] rounded-3xl bg-[#E0E1DD] shadow-xl">
+      <h1 class="text-3xl font-bold text-[#1B263B] mb-6">Get in Touch</h1>
   
       <div class="flex flex-col space-y-4 w-full max-w-md mx-auto">
         <!-- Name Input -->
         <input 
-          class="border border-[#f582ae] rounded-lg w-full py-3 px-4 text-[#001858] focus:outline-none focus:ring-2 focus:ring-[#f582ae] transition-all duration-300 
-                 hover:border-[#f582ae] bg-white placeholder-[#001858]/60" 
-          id="username" type="text" placeholder="Your Name">
+          class="border border-[#778DA9] rounded-lg w-full py-3 px-4 text-[#1B263B] focus:outline-none focus:ring-2 focus:ring-[#778DA9] transition-all duration-300 hover:border-[#778DA9] bg-white placeholder-[#1B263B]/60" 
+          id="username" type="text" placeholder="Name">
   
         <!-- Email Input -->
         <input 
-          class="border border-[#f582ae] rounded-lg w-full py-3 px-4 text-[#001858] focus:outline-none focus:ring-2 focus:ring-[#f582ae] transition-all duration-300 
-                 hover:border-[#f582ae] bg-white placeholder-[#001858]/60" 
-          id="gmail" type="email" placeholder="Your Email">
+          class="border border-[#778DA9] rounded-lg w-full py-3 px-4 text-[#1B263B] focus:outline-none focus:ring-2 focus:ring-[#778DA9] transition-all duration-300 hover:border-[#778DA9] bg-white placeholder-[#1B263B]/60" 
+          id="gmail" type="email" placeholder=" Email">
   
         <!-- Message Box -->
         <textarea 
-          class="border border-[#f582ae] rounded-lg w-full py-3 px-4 text-[#001858] focus:outline-none focus:ring-2 focus:ring-[#f582ae] transition-all duration-300 
-                  hover:border-[#f582ae] bg-white placeholder-[#001858]/60 h-40 resize-none" 
-          id="message" placeholder="Your Message"></textarea>
+          class="border border-[#778DA9] rounded-lg w-full py-3 px-4 text-[#1B263B] focus:outline-none focus:ring-2 focus:ring-[#778DA9] transition-all duration-300 hover:border-[#778DA9] bg-white placeholder-[#1B263B]/60 h-40 resize-none" 
+          id="message" placeholder="Message"></textarea>
   
         <!-- Submit Button -->
         <button 
-          class="mt-4 bg-[#f582ae] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#d46c92] transition-all duration-300 shadow-md">
+          class="mt-4 bg-[#415A77] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#778DA9] transition-all duration-300 shadow-md">
           Send Message
         </button>
       </div>
@@ -106,12 +88,11 @@
   </section>
 
   <!-- section for the footer or copyright -->
+  <!-- Footer section -->
   <footer>
-    <section id="copyright" class="text-center bg-[#fef6e4] text-xs text-[#172c66]">
-    © 2025 Haziqq
+    <section id="copyright" class="text-center bg-[#E0E1DD] text-xs text-[#415A77]">
+      © 2025 Haziqq
     </section>
   </footer>
-
-
 </body>
 </html>
