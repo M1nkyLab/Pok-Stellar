@@ -10,13 +10,24 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#E0E1DD] text-[#0D1B2A]">
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+<body class="bg-[#ecedee] text-[#0D1B2A]">
 
   <!-- Logo -->
   <a href="#" class="text-3xl font-bold text-[#1B263B]">Haziqq.</a>
 
   <!-- Nav Bar -->
-  <nav class="sticky top-3 z-50 mx-auto flex items-center justify-evenly w-[550px] bg-[#415A77] rounded-full border-2 border-[#778DA9]/50 h-14 px-6 py-2 shadow-md backdrop-blur-xl">
+  <nav class="sticky top-3 z-50 mx-auto flex items-center justify-evenly w-[550px] bg-[#6086b0] rounded-full border-2 border-[#778DA9]/50 h-14 px-6 py-2 shadow-md backdrop-blur-xl">
   
     <!-- Navbar Links -->
     <div class="flex space-x-6">
@@ -27,11 +38,13 @@
       <a href="#contact" class="text-lg font-bold text-[#E0E1DD] hover:text-[#778DA9] duration-300">Contact</a>
     </div>
   </nav>
+  
+    
 
   <!-- Home/Intro section -->
   <section id="home" class="h-screen flex items-center justify-center">
     <div class="text-center text-balance">
-      <h1 class="font-[Harmattan] text-6xl hover:underline text-[#1B263B]">I'M Haziqq.</h1>
+      <h1 class="font-[Harmattan] text-6xl text-[#1B263B]">I'M Haziqq.</h1>
       <p class="font-[Heebo] text-[#415A77]">
         Welcome to my Portfolio Website 👋 I'm a <span class="font-bold">Computer Science student </span> at <span class="font-bold text-[#778DA9] hover:underline">Universiti Poly-Tech Malaysia (UPTM)</span>. Just starting my journey into the world of coding and tech. Looking forward to sharing my projects and experiences here! Feel free to get in touch and connect with me!
       </p>
@@ -43,6 +56,19 @@
   <!-- section for the my tools and h screen to fill the entire page  -->
   <section id="tools" class="h-screen text-center">
     <h2 class="py-20 text-4xl text-[#1B263B] font-bold">Tools</h2>
+
+    <div class="w-full max-w-4xl overflow-x-auto whitespace-nowrap p-4 no-scrollbar">
+      <div class="flex space-x-4">
+        <!-- make it hover whenever i lalu mouse  -->
+        <!-- make it scroll horizontol with the page like hybrid scroll  -->
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdxy1c2bvl6odeo52dodk.jpg" class="w-full h-40 rounded-lg shadow-md" alt="Image 1">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdxy1c2bvl6odeo52dodk.jpg" class="w-full h-40 rounded-lg shadow-md" alt="Image 2">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdxy1c2bvl6odeo52dodk.jpg" class="w-full h-40 rounded-lg shadow-md" alt="Image 3">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdxy1c2bvl6odeo52dodk.jpg" class="w-full h-40 rounded-lg shadow-md" alt="Image 4">
+          <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdxy1c2bvl6odeo52dodk.jpg" class="w-full h-40 rounded-lg shadow-md" alt="Image 5">
+      </div>
+  </div>
+    
   </section>   
 
   <!-- My Project section -->
@@ -56,6 +82,7 @@
   </section>   
 
   <!-- Contact section -->
+  <!--mybe tommorrow put some anition , glow boreder and glass or blur effect-->
   <section id="contact" class="h-screen flex flex-col items-center justify-center text-center">
     <h2 class="text-4xl text-[#1B263B] font-bold mb-10"></h2>
   
