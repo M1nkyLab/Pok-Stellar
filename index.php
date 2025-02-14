@@ -10,26 +10,24 @@
 <body>
 
   <!-- sidebar -->
-  <div class="w-[200px] bg-black fixed left-3 top-3 bottom-3 rounded-3xl flex flex-col justify-between py-8">
-    <h1 class="text-amber-200 font-bold text-center">CosmoFlow</h1>
-      <ul class="text-amber-50 font-bold text-center space-y-8">
-        <li><a href="index.html">Dashboard</a></li>
-        <li><a href="statistics.html">Statistics</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="inbox.html">Inbox</a></li>
-        <li><a href="settings.html">Settings</a></li>
+  <div class="w-[200px] bg-black fixed left-3 top-3 bottom-3 rounded-3xl  flex flex-col place-center py-8">
+    <h1 class="text-amber-200 font-bold text-center text-3xl">Cosmo<span class="text-amber-800">Flow</span></h1>
+    <ul class="text-amber-50 font-bold space-y-14 flex flex-col items-center mt-24">
+        <li><a class="" href="index.php">Dashboard</a></li>
+        <li><a href="statistics.php">Statistics</a></li>
+        <li><a href="team.php">Team</a></li>
+        <li><a href="inbox.php">Inbox</a></li>
+        <li><a href="settings.php">Settings</a></li>
       </ul>
   </div>
 
   <!-- cards for greetings user -->
-  <main class="ml-52 p-6 grid grid-cols-3 gap-7">
+  <main class="ml-52 p-6 grid grid-cols-6 gap-7">
     <section class="col-span-2 bg-red-500 p-6 rounded-3xl shadow">
       <h1 class="font-bold text-3xl">Welcome, User!</h1>
         <p>It's good to see you again.</p>
     </section>
   </main>
-
-  <div class="">
   
   <!-- cards for total works -->
   <div class="mt-4 ml-60 w-[200px] grid-cols-3 gap-7">

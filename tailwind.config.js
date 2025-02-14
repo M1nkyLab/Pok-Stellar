@@ -1,22 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-    content: ["./*.html"],
-    theme: {
-      extend: {},
-    },
-    plugins: [],
-  };
-
-  tailwind.config = {
-    darkMode: 'class',
-    theme: {
-      extend: {}
-    }
-  }
-
-  module.exports = {
-    plugins: [
-      require('tailwind-scrollbar'),
-    ],
-  }
-  
+module.exports = {
+  content: ["./*.php", "./src/**/*.{html,js,php}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
