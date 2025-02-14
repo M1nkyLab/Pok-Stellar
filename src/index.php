@@ -10,10 +10,10 @@
 <body>
 
   <!-- sidebar -->
-  <div class="w-[200px] bg-black fixed left-3 top-3 bottom-3 rounded-3xl  flex flex-col place-center py-8">
+  <div class="w-[200px] bg-black fixed left-3 top-5 bottom-5 rounded-3xl  flex flex-col place-center py-8">
     <h1 class="text-amber-200 font-bold text-center text-3xl">Cosmo<span class="text-amber-800">Flow</span></h1>
     <ul class="text-amber-50 font-bold space-y-14 flex flex-col items-center mt-24">
-        <li><a class="" href="index.php">Dashboard</a></li>
+        <li><a href="index.php">Dashboard</a></li>
         <li><a href="statistics.php">Statistics</a></li>
         <li><a href="team.php">Team</a></li>
         <li><a href="inbox.php">Inbox</a></li>
